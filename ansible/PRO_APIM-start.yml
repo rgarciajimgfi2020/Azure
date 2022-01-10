@@ -1,0 +1,16 @@
+name: Start PRO_APIM
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Start APIM_01
+      azure_rm_virtualmachine:
+        resource_group: infracoprod
+        name: INFRACOPRODWSO2API01
+    - name: Start APIM_02
+      azure_rm_virtualmachine:
+        resource_group: infracoprod
+        name: INFRACOPRODWSO2API02
+    - name: Start APIM_AN03
+      azure_rm_virtualmachine:
+        resource_group: infracoprod
+        name: INFRACOPRODWSO2AN03
