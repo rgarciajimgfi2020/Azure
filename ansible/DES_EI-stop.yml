@@ -1,4 +1,4 @@
-name: Stop Azure VM
+name: Stop DES_EI
   hosts: localhost
   connection: local
   tasks:

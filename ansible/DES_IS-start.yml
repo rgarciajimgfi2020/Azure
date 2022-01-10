@@ -1,0 +1,8 @@
+name: Start DES_IS
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Start virtual machine
+      azure_rm_virtualmachine:
+        resource_group: infracodesa
+        name: INFRACODESWSO2IS01

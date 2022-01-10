@@ -1,0 +1,9 @@
+name: Stop DES_APIM
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Stop virtual machine
+      azure_rm_virtualmachine:
+        resource_group: infracodesa
+        name: INFRACODESWSO2API01
+        allocated: no
