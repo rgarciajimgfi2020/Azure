@@ -1,0 +1,16 @@
+name: Start QA_APIM
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Start APIM_01
+      azure_rm_virtualmachine:
+        resource_group: infracoqa
+        name: INFRACOQAWSO2API01
+    - name: Start APIM_02
+      azure_rm_virtualmachine:
+        resource_group: infracoqa
+        name: INFRACOQAWSO2API02
+    - name: Start APIM_AN03
+      azure_rm_virtualmachine:
+        resource_group: infracoqa
+        name: INFRACOQAWSO2AN03

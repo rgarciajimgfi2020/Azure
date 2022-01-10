@@ -1,0 +1,19 @@
+name: Stop QA_APIM
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Stop APIM_01
+      azure_rm_virtualmachine:
+        resource_group: infracoqa
+        name: INFRACOQAWSO2API01
+        allocated: no
+    - name: Stop APIM_02
+      azure_rm_virtualmachine:
+        resource_group: infracoqa
+        name: INFRACOQAWSO2API02
+        allocated: no
+    - name: Stop APIM_AN03
+      azure_rm_virtualmachine:
+        resource_group: infracoqa
+        name: INFRACOQAWSO2AN03
+        allocated: no
