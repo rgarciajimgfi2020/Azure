@@ -2,7 +2,7 @@ name: Start DES_IS
   hosts: localhost
   connection: local
   tasks:
-    - name: Start virtual machine
+    - name: Start IS_01
       azure_rm_virtualmachine:
         resource_group: infracodesa
         name: INFRACODESWSO2IS01

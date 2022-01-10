@@ -2,7 +2,7 @@ name: Stop DES_IS
   hosts: localhost
   connection: local
   tasks:
-    - name: Stop virtual machine
+    - name: Stop IS_01
       azure_rm_virtualmachine:
         resource_group: infracodesa
         name: INFRACODESWSO2IS01

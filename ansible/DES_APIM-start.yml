@@ -2,7 +2,7 @@ name: Start DES_APIM
   hosts: localhost
   connection: local
   tasks:
-    - name: Start virtual machine
+    - name: Start API_01
       azure_rm_virtualmachine:
         resource_group: infracodesa
         name: INFRACODESWSO2API01
