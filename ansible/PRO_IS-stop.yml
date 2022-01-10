@@ -1,0 +1,19 @@
+name: Stop PRO_IS
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Stop IS_01
+      azure_rm_virtualmachine:
+        resource_group: infracoprod
+        name: INFRACOPRODWSO2IS01
+        allocated: no
+    - name: Stop IS_02
+      azure_rm_virtualmachine:
+        resource_group: infracoprod
+        name: INFRACOPRODWSO2IS02
+        allocated: no
+    - name: Stop IS_AN02
+      azure_rm_virtualmachine:
+        resource_group: infracoprod
+        name: INFRACOPRODWSO2AN02
+        allocated: no
