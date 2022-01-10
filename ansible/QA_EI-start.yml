@@ -1,0 +1,16 @@
+name: Start QA_EI
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Start EI_01
+      azure_rm_virtualmachine:
+        resource_group: infracoqa
+        name: INFRACOQAWSO2EI01
+    - name: Start EI_02
+      azure_rm_virtualmachine:
+        resource_group: infracoqa
+        name: INFRACOQAWSO2EI02
+    - name: Start EI_AN01
+      azure_rm_virtualmachine:
+        resource_group: infracoqa
+        name: INFRACOQAWSO2AN01
