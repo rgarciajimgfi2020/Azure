@@ -1,4 +1,4 @@
-name: Stop QA_APIM
+name: Stop QA_EI
   hosts: localhost
   connection: local
   tasks:
