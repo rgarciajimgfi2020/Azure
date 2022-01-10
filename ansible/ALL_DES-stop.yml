@@ -1,0 +1,19 @@
+name: Stop ALL_DES
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Stop EI
+      azure_rm_virtualmachine:
+        resource_group: infracodesa
+        name: INFRACODESWSO2EI01
+        allocated: no
+    - name: Stop IS
+      azure_rm_virtualmachine:
+        resource_group: infracodesa
+        name: INFRACODESWSO2IS01
+        allocated: no
+    - name: Stop API
+      azure_rm_virtualmachine:
+        resource_group: infracodesa
+        name: INFRACODESWSO2API01
+        allocated: no

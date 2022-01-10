@@ -1,0 +1,16 @@
+name: Start ALL_DES
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Start EI
+      azure_rm_virtualmachine:
+        resource_group: infracodesa
+        name: INFRACODESWSO2EI01
+    - name: Start IS
+      azure_rm_virtualmachine:
+        resource_group: infracodesa
+        name: INFRACODESWSO2IS01
+    - name: Start API
+      azure_rm_virtualmachine:
+        resource_group: infracodesa
+        name: INFRACODESWSO2API01
