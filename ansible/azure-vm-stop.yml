@@ -4,6 +4,6 @@
   tasks:
     - name: Stop virtual machine
       azure_rm_virtualmachine:
-        resource_group: {{ test }}
-        name: {{ VMtest }}
+        resource_group: test
+        name: VMtest
         allocated: no
