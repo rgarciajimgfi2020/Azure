@@ -1,0 +1,42 @@
+name: Start PRO_EI
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Start EI_01
+      azure_rm_virtualmachine:
+        resource_group: infracoprod
+        name: INFRACOPRODWSO2EI01
+    - name: Start EI_02
+      azure_rm_virtualmachine:
+        resource_group: infracoprod
+        name: INFRACOPRODWSO2EI02
+    - name: Start EI_AN01
+      azure_rm_virtualmachine:
+        resource_group: infracoprod
+        name: INFRACOPRODWSO2AN01
+
+    - name: Start IS_01
+      azure_rm_virtualmachine:
+        resource_group: infracoprod
+        name: INFRACOPRODWSO2IS01
+    - name: Start IS_02
+      azure_rm_virtualmachine:
+        resource_group: infracoprod
+        name: INFRACOPRODWSO2IS02
+    - name: Start IS_AN02
+      azure_rm_virtualmachine:
+        resource_group: infracoprod
+        name: INFRACOPRODWSO2AN02
+
+    - name: Start APIM_01
+      azure_rm_virtualmachine:
+        resource_group: infracoprod
+        name: INFRACOPRODWSO2API01
+    - name: Start APIM_02
+      azure_rm_virtualmachine:
+        resource_group: infracoprod
+        name: INFRACOPRODWSO2API02
+    - name: Start APIM_AN03
+      azure_rm_virtualmachine:
+        resource_group: infracoprod
+        name: INFRACOPRODWSO2AN03
