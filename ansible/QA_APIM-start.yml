@@ -1,4 +1,4 @@
-name: Start QA_APIM
+- name: Start QA_APIM
   hosts: localhost
   connection: local
   tasks:

@@ -1,4 +1,4 @@
-name: Start QA_EI
+- name: Start QA_EI
   hosts: localhost
   connection: local
   tasks:

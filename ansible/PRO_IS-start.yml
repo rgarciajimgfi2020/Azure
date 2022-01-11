@@ -1,4 +1,4 @@
-name: Start PRO_IS
+- name: Start PRO_IS
   hosts: localhost
   connection: local
   tasks:

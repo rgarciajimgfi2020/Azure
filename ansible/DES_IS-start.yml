@@ -1,4 +1,4 @@
-name: Start DES_IS
+- name: Start DES_IS
   hosts: localhost
   connection: local
   tasks:

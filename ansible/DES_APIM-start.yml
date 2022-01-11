@@ -1,4 +1,4 @@
-name: Start DES_APIM
+- name: Start DES_APIM
   hosts: localhost
   connection: local
   tasks:

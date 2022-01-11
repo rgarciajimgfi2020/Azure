@@ -1,4 +1,4 @@
-name: Stop DES_EI
+- name: Stop DES_EI
   hosts: localhost
   connection: local
   tasks:

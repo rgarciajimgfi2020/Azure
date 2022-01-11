@@ -1,4 +1,4 @@
-name: Stop DES_APIM
+- name: Stop DES_APIM
   hosts: localhost
   connection: local
   tasks:

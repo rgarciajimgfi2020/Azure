@@ -1,4 +1,4 @@
-name: Start PRO_EI
+- name: Start PRO_EI
   hosts: localhost
   connection: local
   tasks:

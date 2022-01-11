@@ -1,4 +1,4 @@
-name: Stop PRO_IS
+- name: Stop PRO_IS
   hosts: localhost
   connection: local
   tasks:

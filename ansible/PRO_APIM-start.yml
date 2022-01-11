@@ -1,4 +1,4 @@
-name: Start PRO_APIM
+- name: Start PRO_APIM
   hosts: localhost
   connection: local
   tasks:

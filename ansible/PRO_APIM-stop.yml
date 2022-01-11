@@ -1,4 +1,4 @@
-name: Stop PRO_APIM
+- name: Stop PRO_APIM
   hosts: localhost
   connection: local
   tasks:

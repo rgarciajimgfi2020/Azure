@@ -1,4 +1,4 @@
-name: Stop DES_IS
+- name: Stop DES_IS
   hosts: localhost
   connection: local
   tasks:

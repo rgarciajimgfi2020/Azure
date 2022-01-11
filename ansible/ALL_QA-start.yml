@@ -1,4 +1,4 @@
-name: Start ALL_QA
+- name: Start ALL_QA
   hosts: localhost
   connection: local
   tasks:
