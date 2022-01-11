@@ -1,8 +1,8 @@
-name: Start DES_EI
+- name: Start DES_EI
   hosts: localhost
   connection: local
   tasks:
     - name: Start EI_01
       azure_rm_virtualmachine:
-        resource_group: infracodesa
+        resource_group: INFRACODESA
         name: INFRACODESWSO2EI01
