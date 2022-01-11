@@ -1,0 +1,9 @@
+- name: Stop DES_AN01
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Stop AN01
+      azure_rm_virtualmachine:
+        resource_group: infracodesa
+        name: INFRACODESWSO2AN01
+        allocated: no
