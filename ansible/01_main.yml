@@ -47,7 +47,7 @@
           protocol: Tcp
           destination_port_range: 9643
           access: Allow
-          priority: 104
+          priority: 105
           direction: Inbound
   - name: Create virtual network interface card
     azure_rm_networkinterface:
