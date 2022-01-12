@@ -37,9 +37,15 @@
           access: Allow
           priority: 1001
           direction: Inbound
-        - name: test
+        - name: consola9443
           protocol: Tcp
-          destination_port_range: 5000
+          destination_port_range: 9443
+          access: Allow
+          priority: 104
+          direction: Inbound
+        - name: consola9643
+          protocol: Tcp
+          destination_port_range: 9643
           access: Allow
           priority: 104
           direction: Inbound
@@ -55,7 +61,7 @@
     azure_rm_virtualmachine:
       resource_group: test
       name: VMtest
-      vm_size: Standard_DS1_v2
+      vm_size: Standard_D2_v3
       admin_username: azureuser
       admin_password: Sevilla-2021.
       network_interfaces: myNIC
